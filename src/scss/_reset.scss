@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+abbr,
+em,
+img,
+strong,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* li {
+  list-style: none;
+  text-decoration: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}

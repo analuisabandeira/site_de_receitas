@@ -1,0 +1,112 @@
+[
+  {
+    "categoryId": "Datas Festivas",
+    "recipes": [
+      {
+        "name": "Bolachinhas de Aveia",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolachinha_de_aveia.png",
+        "main": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      }
+    ]
+  },
+  {
+    "categoryId": "Bolos e Sobremesas",
+    "recipes": [
+      {
+        "name": "Bolachinhas de Aveia2",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolachinha_de_aveia.png",
+        "main": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      }
+    ]
+  },
+  {
+    "categoryId": "Tortas Salgadas",
+    "recipes": [
+      {
+        "name": "Bolachinhas de Aveia3",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolachinha_de_aveia.png",
+        "main": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      }
+    ]
+  },
+  {
+    "categoryId": "Receitinhas Saudáveis",
+    "recipes": [
+      {
+        "name": "Bolachinhas de Aveia4",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolachinha_de_aveia.png",
+        "main": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      }
+    ]
+  },
+  {
+    "categoryId": "Sopas e Caldos",
+    "recipes": [
+      {
+        "name": "Bolachinhas de Aveia5",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolachinha_de_aveia.png",
+        "main": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+@import '/src/styles.scss';
+@import '/src/app/pages/home/home.component.scss';
+
+.main-recipes-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.main-card {
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: rgb(13, 50, 50);
+    font-weight: bold;
+    transform: translateY(-8px);
+  }
+}

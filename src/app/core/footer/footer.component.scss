@@ -1,0 +1,33 @@
+@import '/src/styles.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: $footer-gradient;
+  height: 250px;
+  text-align: center;
+  color: rgb(58, 52, 52);
+  font-weight: bold;
+  position: static;
+  bottom: 0;
+  width: 100%;
+
+  &-p {
+    margin-bottom: 10px;
+
+    &-span {
+      font-size: 18px;
+      color: #0e656b;
+    }
+
+    &-a {
+      color: rgb(58, 52, 52);
+      transition: 0.5s;
+      &:hover {
+        color: rgb(2, 120, 128);
+        cursor: pointer;
+      }
+    }
+  }
+}

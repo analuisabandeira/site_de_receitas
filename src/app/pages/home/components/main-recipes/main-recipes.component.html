@@ -1,0 +1,6 @@
+<section>
+  <h2 class="title-main-section">Conheça as nossas principais receitas</h2>
+  <div class="main-recipes-list" *ngFor="let recipe of recipesList">
+    <app-main-card class="main-card" [recipe]="recipe"></app-main-card>
+  </div>
+</section>

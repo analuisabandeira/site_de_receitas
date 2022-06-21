@@ -1,0 +1,35 @@
+@import '/src/styles.scss';
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  height: 40px;
+  align-items: center;
+
+  &-li {
+    height: 100%;
+    cursor: pointer;
+
+    &-a {
+      color: #ffffff;
+      transition: 1s ease;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      height: 100%;
+      display: block;
+
+      &:hover {
+        color: $hover;
+        transform: translateY(-8px);
+      }
+      &.active {
+        color: #494343;
+      }
+    }
+    // &:hover {
+    //   transform: translateY(-8px);
+    // }
+  }
+}
