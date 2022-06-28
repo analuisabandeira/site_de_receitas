@@ -1,0 +1,54 @@
+@import '/src/styles.scss';
+
+:host {
+  width: 100%;
+}
+
+.section-contact {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  &-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // width: 50%;
+      flex: 1;
+    }
+
+    &-image {
+      margin-left: 50px;
+      width: 100px;
+      align-self: center;
+      flex-grow: 1;
+      flex: 1;
+    }
+  }
+}
+
+.form-button {
+  height: 40px;
+  background: #158a99;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  font-size: 18px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: #055863;
+}
+
+.form-button:active {
+  background: #02292e;
+}

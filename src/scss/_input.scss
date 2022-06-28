@@ -1,0 +1,24 @@
+.input-default {
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.input-default:focus {
+  outline-color: #217782;
+}
+
+.form-controls {
+  margin-bottom: 10px;
+}
+
+.form-check {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+
+  &-label {
+    margin: 10px 10px 0 0;
+  }
+}

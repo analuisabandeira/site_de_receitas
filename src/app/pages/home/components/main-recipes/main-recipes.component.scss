@@ -1,6 +1,12 @@
 @import '/src/styles.scss';
 @import '/src/app/pages/home/home.component.scss';
 
+.main-recipes {
+  margin: 50px 0;
+  width: 100%;
+  max-width: 940px;
+}
+
 .main-recipes-list {
   display: flex;
   justify-content: space-between;
@@ -10,7 +16,7 @@
 }
 
 .main-card {
-  width: 30%;
+  width: 33%;
   text-align: center;
   box-sizing: border-box;
   transition: 0.2s ease;

@@ -26,6 +26,13 @@ export class CategoriesService {
     return this.http.get<ICategory[]>('assets/mock/mock_database.json');
   }
 
+  getFavorites() {
+    return [
+      { valor: 's', desc: 'Sim' },
+      { valor: 'n', desc: 'Não' }
+    ];
+  }
+
   // getRecipes() {}
 }
 function Input() {

@@ -1,6 +1,6 @@
 import { IRecipe } from "./recipe-interface";
 
 export interface ICategory {
-    categoryId: string,
+    category: string,
     recipes: IRecipe[],
 }

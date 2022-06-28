@@ -1,0 +1,28 @@
+@import '/src/styles.scss';
+
+.about-kika {
+  width: 100%;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+
+  &-text {
+    width: 50%;
+    line-height: 20px;
+    align-self: center;
+
+    &-p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+  }
+
+  &-image {
+    width: 350px;
+    border-radius: 40px 10px;
+    box-shadow: 5px 5px 5px rgb(72, 216, 168);
+  }
+}

@@ -1,13 +1,13 @@
 [
   {
-    "categoryId": "Datas Festivas",
+    "category": "Datas Festivas",
     "recipes": [
       {
-        "name": "Bolachinhas de Aveia",
+        "name": "Bolinho de Chuva",
         "preparationTime": "45",
         "revenue": "12",
-        "image": "assets/images/bolachinha_de_aveia.png",
-        "main": true,
+        "image": "assets/images/bolinho_de_chuva.png",
+        "betestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -22,14 +22,31 @@
     ]
   },
   {
-    "categoryId": "Bolos e Sobremesas",
+    "category": "Bolos e Sobremesas",
     "recipes": [
       {
-        "name": "Bolachinhas de Aveia2",
+        "name": "Bolo de Chocolate",
         "preparationTime": "45",
         "revenue": "12",
-        "image": "assets/images/bolachinha_de_aveia.png",
-        "main": true,
+        "image": "assets/images/bolo_de_chocolate.png",
+        "betestDishes": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      },
+      {
+        "name": "Bolo de Grude",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/bolo_de_grude.png",
+        "betestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -44,14 +61,14 @@
     ]
   },
   {
-    "categoryId": "Tortas Salgadas",
+    "category": "Tortas Salgadas",
     "recipes": [
       {
-        "name": "Bolachinhas de Aveia3",
+        "name": "Torta de Frango",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolachinha_de_aveia.png",
-        "main": true,
+        "betestDishes": false,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -66,14 +83,31 @@
     ]
   },
   {
-    "categoryId": "Receitinhas Saudáveis",
+    "category": "Receitinhas Saudáveis",
     "recipes": [
       {
-        "name": "Bolachinhas de Aveia4",
+        "name": "Crepioca",
+        "preparationTime": "45",
+        "revenue": "12",
+        "image": "assets/images/crepioca.png",
+        "betestDishes": true,
+        "ingredients": [
+          "1kg de goma fresca",
+          " 1kg de açúcar",
+          " 1L de leite",
+          "1 coco grande ralado",
+          " 3 ovos",
+          " 2cls de manteiga ou margarina derretida",
+          " 1 pitada de sal"
+        ],
+        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+      },
+      {
+        "name": "Biscoitinhos de Aveia",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolachinha_de_aveia.png",
-        "main": true,
+        "betestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -88,14 +122,14 @@
     ]
   },
   {
-    "categoryId": "Sopas e Caldos",
+    "category": "Sopas e Caldos",
     "recipes": [
       {
-        "name": "Bolachinhas de Aveia5",
+        "name": "Caldo Verde",
         "preparationTime": "45",
         "revenue": "12",
-        "image": "assets/images/bolachinha_de_aveia.png",
-        "main": true,
+        "image": "assets/images/caldo_verde.png",
+        "betestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",

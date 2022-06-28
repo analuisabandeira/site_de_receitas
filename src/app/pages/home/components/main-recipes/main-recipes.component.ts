@@ -20,7 +20,7 @@ export class MainRecipesComponent implements OnInit {
         this.recipesList.push(...category.recipes);
       });
 
-      this.recipesList = this.recipesList.filter(recipe => recipe.main);
+      this.recipesList = this.recipesList.filter(recipe => recipe.betestDishes);
 
       if (this.recipesList.length > 6) {
         this.recipesList.length = 6;

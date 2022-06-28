@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Receitas da Vovó Kika';
+
+  modalVisible = false;
+
+  modalVisibility(event: boolean) {
+    this.modalVisible = event;
+  }
 }

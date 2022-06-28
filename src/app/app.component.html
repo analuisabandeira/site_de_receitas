@@ -1,3 +1,6 @@
+<app-add-recipe (buttonClicked)="modalVisibility($event)"></app-add-recipe>
+<div class="overlay" [ngClass]="{ active: modalVisible }" ></div>
+<app-modal-edit-recipe [modalVisible]="modalVisible" (buttonClicked)="modalVisibility($event)"></app-modal-edit-recipe>
 <app-header></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

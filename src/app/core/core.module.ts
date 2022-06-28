@@ -1,23 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { FooterComponent } from './footer/footer.component';
-import { HeaderModule } from './header/header.module';
-import { CategoriesService } from './services/categories.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { HeaderModule } from './header/header.module';
+import { FooterComponent } from './footer/footer.component';
+import { CategoriesService } from './services/categories.service';
+import { InputFieldComponent } from './components/input-field/input-field.component';
+import { ModalEditRecipeComponent } from './components/modal-edit-recipe/modal-edit-recipe.component';
+import { AddRecipeComponent } from './components/add-recipe/add-recipe.component';
 
 @NgModule({
   declarations: [
-    FooterComponent
+    FooterComponent,
+    ModalEditRecipeComponent,
+    AddRecipeComponent,
+    InputFieldComponent
   ],
   imports: [
     CommonModule,
     HeaderModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     HeaderModule,
-    FooterComponent
+    FooterComponent,
+    ModalEditRecipeComponent,
+    AddRecipeComponent,
+    InputFieldComponent
   ],
   providers: [
     CategoriesService

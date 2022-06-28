@@ -1,0 +1,90 @@
+@import '/src/styles.scss';
+
+.modal-new-recipe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #02292e;
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 800px;
+  max-width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  // overflow-y: scroll;
+  // z-index: 10000;
+
+  &-header {
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      flex: 1;
+      padding-bottom: 5px;
+    }
+
+    &-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 1.5rem;
+      transition: 1s;
+
+      &:hover {
+        color: #0b7d8c;
+      }
+    }
+  }
+
+  &-form {
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &-check {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-input-file {
+        background: none;
+        outline: none;
+        margin: 10px 0;
+        padding: 10px 0;
+      }
+    }
+
+    &-add-ingredients {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      &-control {
+        flex: 1;
+      }
+
+      &-button {
+        width: 120px;
+        max-width: 200px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.active {
+  transform: translate(-50%, -50%) scale(1);
+}

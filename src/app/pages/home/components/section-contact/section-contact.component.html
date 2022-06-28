@@ -1,0 +1,31 @@
+<section class="section-contact">
+  <h2 class="title-main-section">Qual receita você deseja ver aqui?</h2>
+  <div class="section-contact-form">
+    <form class="section-contact-form-controls" novalidate [formGroup]="form">
+      <div class="form-controls">
+        <app-input-field
+          id="name"
+          label="Nome: "
+          placeholder="Como você se chama?"
+          type="text"
+          formControlName="name"
+        ></app-input-field>
+      </div>
+      <div class="form-controls">
+        <app-input-field
+          id="email"
+          label="E-mail:"
+          placeholder="seuemail@dominio.com"
+          type="email"
+          formControlName="email"
+        ></app-input-field>
+      </div>
+      <div class="form-controls">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" cols="70" rows="10" class="input-default" formControlName="message"></textarea>
+      </div>
+      <button type="submit" id="form-button" class="form-button">Enviar Sugestão</button>
+    </form>
+    <img src="assets/icons/logo.png" alt="" class="section-contact-form-image" />
+  </div>
+</section>

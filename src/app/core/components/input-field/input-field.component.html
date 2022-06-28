@@ -1,0 +1,12 @@
+<div>
+  <label [attr.for]="id"> {{ label }} </label>
+  <input
+    class="input-default"
+    [type]="type"
+    [id]="id"
+    [placeholder]="placeholder"
+    [ngClass]="classeCss"
+    [readonly]="!!isReadOnly"
+    [(ngModel)]="value"
+  />
+</div>

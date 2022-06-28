@@ -1,7 +1,7 @@
 @import '/src/styles.scss';
 
 .main-section {
-  max-width: 100%;
+  max-width: 940px; 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9,23 +9,3 @@
   align-items: center;
   padding: 0 25px;
 }
-
-.main-recipes {
-  margin: 50px 0;
-  width: 100%;
-  max-width: 940px;
-}
-
-.title-main-section {
-  font-size: 2em;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-.subtitle-main-section {
-  font-size: 20px;
-  margin: 10px 0;
-  color: #09434b;
-}
-
-

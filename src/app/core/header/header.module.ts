@@ -5,16 +5,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
-  declarations: [
-    HeaderComponent, 
-    NavbarComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    HeaderComponent, 
-    NavbarComponent
-  ]
+  declarations: [HeaderComponent, NavbarComponent],
+  imports: [CommonModule],
+  exports: [HeaderComponent, NavbarComponent]
 })
 export class HeaderModule {}

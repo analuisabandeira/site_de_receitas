@@ -3,7 +3,7 @@ export interface IRecipe {
   preparationTime: string;
   revenue: string;
   image: string;
-  main: boolean;
+  betestDishes: boolean;
   ingredients: string[];
   methodOfPreparation: string;
 }

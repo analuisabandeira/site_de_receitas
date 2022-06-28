@@ -1,0 +1,16 @@
+.btn-default {
+  height: 40px;
+  background: #158a99;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 800px;
+
+  &:hover {
+    background: #055863;
+  }
+}

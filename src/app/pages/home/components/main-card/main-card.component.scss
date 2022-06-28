@@ -1,13 +1,14 @@
 @import '/src/app/pages/home/home.component.scss';
 
 .main-card-a {
-    text-decoration: none;
-    color: #000000;
-    &-image {
-      margin: 10px 10px 10px 0;
-      width: 100%;
-      border-radius: 8px;
-      height: 200px;
-      max-width: 280px;
-    }
+  text-decoration: none;
+  color: #000000;
+
+  &-image {
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    max-width: 280px;
   }
+}
