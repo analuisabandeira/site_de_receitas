@@ -2,11 +2,10 @@
   <ul class="navbar-list">
     <li
       class="navbar-list-li"
-      routerLinkActive="active"
-      *ngFor="let category of categoriesList"
+      *ngFor="let route of routesList"
     >
-      <a class="navbar-list-li-a" routerLink="/category">
-        {{ category.category }}
+      <a class="navbar-list-li-a" [routerLink]="['/category', route.link]"  routerLinkActive="active">
+        {{ route.title }}
       </a>
     </li>
   </ul>

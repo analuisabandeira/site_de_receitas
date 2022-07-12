@@ -2,23 +2,30 @@
   text-align: left;
   padding: 10px;
   width: 100%;
-  margin-top: 5px;
-}
+  font-size: 15px;
 
-.input-default:focus {
-  outline-color: #217782;
-}
-
-.form-controls {
-  margin-bottom: 10px;
+  &:focus {
+    outline-color: #217782;
+  }
 }
 
 .form-check {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-end;
 
   &-label {
     margin: 10px 10px 0 0;
   }
+}
+
+.label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.radio-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
 }

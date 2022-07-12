@@ -1,13 +1,15 @@
 [
   {
     "category": "Datas Festivas",
+    "categoryId": "datas_festivas",
     "recipes": [
       {
         "name": "Bolinho de Chuva",
+        "categoryId": "datas_festivas",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolinho_de_chuva.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -17,19 +19,21 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       }
     ]
   },
   {
     "category": "Bolos e Sobremesas",
+    "categoryId": "sobremesas",
     "recipes": [
       {
         "name": "Bolo de Chocolate",
+        "categoryId": "sobremesas",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolo_de_chocolate.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -39,14 +43,15 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       },
       {
         "name": "Bolo de Grude",
+        "categoryId": "sobremesas",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolo_de_grude.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -56,19 +61,21 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       }
     ]
   },
   {
     "category": "Tortas Salgadas",
+    "categoryId": "tortas_salgadas",
     "recipes": [
       {
         "name": "Torta de Frango",
+        "categoryId": "tortas_salgadas",
         "preparationTime": "45",
         "revenue": "12",
-        "image": "assets/images/bolachinha_de_aveia.png",
-        "betestDishes": false,
+        "image": "assets/images/torta_de_frango.png",
+        "bestDishes": false,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -78,19 +85,21 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       }
     ]
   },
   {
     "category": "Receitinhas Saudáveis",
+    "categoryId": "receitas_saudaveis",
     "recipes": [
       {
         "name": "Crepioca",
+        "categoryId": "receitas_saudaveis",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/crepioca.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -100,14 +109,15 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       },
       {
         "name": "Biscoitinhos de Aveia",
+        "categoryId": "receitas_saudaveis",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/bolachinha_de_aveia.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -117,19 +127,21 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       }
     ]
   },
   {
     "category": "Sopas e Caldos",
+    "categoryId": "sopas",
     "recipes": [
       {
         "name": "Caldo Verde",
+        "categoryId": "sopas",
         "preparationTime": "45",
         "revenue": "12",
         "image": "assets/images/caldo_verde.png",
-        "betestDishes": true,
+        "bestDishes": true,
         "ingredients": [
           "1kg de goma fresca",
           " 1kg de açúcar",
@@ -139,7 +151,7 @@
           " 2cls de manteiga ou margarina derretida",
           " 1 pitada de sal"
         ],
-        " methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
+        "methodOfPreparation": "Em uma vasilha funda, coloque a goma, os ovos e mexa bem. Acrescente o açúcar, o leite, o coco ralado e a manteiga, misture bem e acrescente o sal. Em uma forma de pudim untada com manteiga e polvilhada com farinha de trigo, despeje a mistura do bolo. Leve ao forno pré aquecido a 180º por aproximadamente 30min, ou até o coco ficar dourado. Sirva frio."
       }
     ]
   }

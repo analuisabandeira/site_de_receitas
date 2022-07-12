@@ -1,0 +1,32 @@
+<div class="recipe">
+  <h2 class="title-main-section">{{ recipe.name }}</h2>
+  <ul class="recipe-info-list">
+    <li class="recipe-info-list-item">
+      <img [src]="'assets/icons/clock.svg'" alt="'clock'" class="recipe-info-list-item-image" />
+      <p class="recipe-info-list-item-text">{{ recipe.preparationTime }} min</p>
+    </li>
+    <li class="recipe-info-list-item">
+      <img [src]="'assets/icons/soup.png'" alt="'bowl'" class="recipe-info-list-item-image" />
+      <p class="recipe-info-list-item-text">{{ recipe.revenue }} fatias</p>
+    </li>
+  </ul>
+  <section class="recipe-details">
+    <img [src]="recipe.image" [alt]="recipe.name" class="recipe-details-image"/>
+    <div class="recipe-details-steps">
+      <ul class="recipe-details-steps-list">
+        <li class="recipe-details-steps-list-li">
+          <h3 class="subtitle-main-section">Ingredientes:</h3>
+          <ul class="recipe-details-steps-list-li-ingredients">
+            <li *ngFor="let ingredient of recipe.ingredients" class="recipe-details-steps-list-li-ingredients-item">
+              <span class="recipe-details-steps-list-li-ingredients-item-span"> {{ ingredient }}</span>
+            </li>
+          </ul>
+        </li>
+        <li class="recipe-details-steps-list-li">
+          <h3 class="subtitle-main-section">Modo de Preparo:</h3>
+          <p class="recipe-details-steps-list-li-p">{{ recipe.methodOfPreparation }}</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>

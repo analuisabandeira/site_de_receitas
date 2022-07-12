@@ -1,1 +1,5 @@
-<p>categories works!</p>
+<section class="category-container">
+  <div class="category-container-recipes-list">
+    <app-recipe-details *ngFor="let recipe of recipesList" [recipe]="recipe"></app-recipe-details>
+  </div>
+</section>

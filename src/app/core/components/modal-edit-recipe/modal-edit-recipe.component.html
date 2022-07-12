@@ -1,89 +1,111 @@
 <div class="modal-new-recipe" [ngClass]="{ active: modalVisible }">
   <div class="modal-new-recipe-header">
-    <div class="modal-new-recipe-header-title">
+    <div>
       <h2 class="modal-title">Adicionar Nova Receita</h2>
     </div>
     <button class="modal-new-recipe-header-button" (click)="onClick()">&times;</button>
   </div>
   <div class="modal-new-recipe-form">
-    <form [formGroup]="form">
-      <div class="form-controls">
-        <fieldset>
-          <legend style="margin-bottom: 5px">Selecione a Categoria da Receita:</legend>
-          <select formControlName="category" class="input-default">
-            <option *ngFor="let category of categories" [value]="category.category">
-              {{ category.category }}
-            </option>
-          </select>
-        </fieldset>
-      </div>
-      <div class="form-controls">
-        <app-input-field
-          id="recipeName"
-          label="Nome da Receita: "
-          type="text"
-          formControlName="recipeName"
-          placeholder=" "
-        ></app-input-field>
-      </div>
-      <div class="form-controls">
-        <app-input-field
-          id="preparationTime"
-          label="Tempo de Preparo: "
-          type="text"
-          formControlName="preparationTime"
-          placeholder=" "
-        ></app-input-field>
-      </div>
-      <div class="form-controls">
-        <app-input-field
-          id="revenue"
-          label="Rendimento: "
-          type="text"
-          formControlName="revenue"
-          placeholder=" "
-        ></app-input-field>
-      </div>
-      <div class="modal-new-recipe-form-check">
-        <app-input-field
-          id="image"
-          label="Foto da Receita: "
-          type="file"
-          formControlName="image"
-          placeholder=" "
-          (change)="fileUpload($event.target)"
-          class="modal-new-recipe-form-check-input-file"
-        ></app-input-field>
+    <form [formGroup]="form" class="modal-new-recipe-form-container">
+      <div class="modal-new-recipe-form-container-add">
         <div>
-          <legend>Sua Receita é uma Favorita?</legend>
-          <div class="form-check">
-            <label *ngFor="let item of favoriteRecipes" class="form-check-label">
+          <fieldset>
+            <legend class="label">Selecione a Categoria da Receita:</legend>
+            <select formControlName="category" class="input-default" [ngClass]="setFeedback('category')">
+              <option *ngFor="let category of categories" [value]="category.category">
+                {{ category.category }}
+              </option>
+            </select>
+            <app-error-message [control]="getFormControl('category')" [label]="'Categoria:'" name="'Categoria:'">
+            </app-error-message>
+          </fieldset>
+        </div>
+        <div>
+          <legend class="label">Sua Receita é uma Favorita?</legend>
+          <div class="radio-button">
+            <label *ngFor="let item of favoriteRecipes" class="radio-button-label">
               <input type="radio" formControlName="betestDishes" [value]="item.valor" />
               {{ item.desc }}
             </label>
           </div>
         </div>
       </div>
-      <div class="modal-new-recipe-form-add-ingredients form-controls">
-        <app-input-field
+      <app-input-field
+        id="recipeName"
+        label="Nome da Receita: "
+        type="text"
+        formControlName="recipeName"
+        placeholder=" "
+        [control]="getFormControl('recipeName')"
+        [classeCss]="setFeedback('recipeName')"
+        name="'Nome da Receita'"
+      ></app-input-field>
+      <app-input-field
+        id="preparationTime"
+        label="Tempo de Preparo: "
+        type="text"
+        formControlName="preparationTime"
+        placeholder=" "
+        [control]="getFormControl('preparationTime')"
+        [classeCss]="setFeedback('preparationTime')"
+        name="'Tempo de Preparo'"
+      ></app-input-field>
+      <app-input-field
+        id="revenue"
+        label="Rendimento: "
+        type="text"
+        formControlName="revenue"
+        placeholder=" "
+        [control]="getFormControl('revenue')"
+        [classeCss]="setFeedback('revenue')"
+        name="'Rendimento'"
+      ></app-input-field>
+      <div class="modal-new-recipe-form-container-file">
+        <legend class="label">Foto da Receita:</legend>
+        <label for="image" class="btn-default modal-new-recipe-form-container-file-label"> Escolher arquivo </label>
+        <input
+          id="image"
+          type="file"
+          formControlName="image"
+          (change)="fileUpload($event.target)"
+          style="display: none"
+        />
+      </div>
+      <div class="modal-new-recipe-form-container-add-ingredients">
+        <!-- <app-input-field
           id="ingredients"
           label="Ingredientes: "
           type="text"
           formControlName="ingredients"
           placeholder=" "
-          class="modal-new-recipe-form-add-ingredients-control"
-        ></app-input-field>
-        <button class="btn-default modal-new-recipe-form-add-ingredients-button">Adicionar</button>
+          [classeCss]="setFeedback('ingredients')"
+          [control]="getFormControl('ingredients')"
+        ></app-input-field> -->
+        <div
+          *ngFor="let ingredient of ingredientsList.controls; last as isLast; index as i"
+          formArrayName="ingredients"
+        >
+          <label for="ingredients" class="c-input-label">Ingredientes:</label>
+
+          <input [formControlName]="i" class="c-container-input" id="ingredients" name="ingredients" />
+
+          <button type="button" class="btn" *ngIf="ingredientsList.length > 1" (click)="onRemove(i)">Remover</button>
+
+          <button class="btn-default modal-new-recipe-form-add-ingredients-button" (click)="onAdd()">Adicionar</button>
+        </div>
       </div>
-      <div class="form-controls">
-        <label for="methodOfPreparation">Modo de Preparo:</label>
+      <div class="">
+        <label class="label" for="methodOfPreparation">Modo de Preparo:</label>
         <textarea
           id="methodOfPreparation"
           cols="70"
           rows="5"
           class="input-default"
           formControlName="methodOfPreparation"
+          [ngClass]="setFeedback('methodOfPreparation')"
         ></textarea>
+        <app-error-message [control]="getFormControl('methodOfPreparation')" [label]="'Modo de Preparo'">
+        </app-error-message>
       </div>
       <button class="btn-default" type="submit">Enviar Receita</button>
     </form>

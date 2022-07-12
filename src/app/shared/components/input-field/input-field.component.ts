@@ -22,6 +22,7 @@ export class InputFieldComponent implements ControlValueAccessor {
   @Input() placeholder!: string;
   @Input() control: any;
   @Input() isReadOnly = false;
+  @Input() name!: string;
   
   private innerValue: any;
 
@@ -57,6 +58,6 @@ export class InputFieldComponent implements ControlValueAccessor {
   }
 
   validFeedback(control:any) {
-    return this.control.valid && (this.control.touched || this.control.dirty);
+    return control.valid && (control.touched || control.dirty);
   }
 }

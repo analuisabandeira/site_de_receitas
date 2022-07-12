@@ -1,4 +1,4 @@
-<div>
+<div class="input-control">
   <label [attr.for]="id"> {{ label }} </label>
   <input
     class="input-default"
@@ -6,7 +6,13 @@
     [id]="id"
     [placeholder]="placeholder"
     [ngClass]="classeCss"
-    [readonly]="!!isReadOnly"
+    [readonly]="isReadOnly"
     [(ngModel)]="value"
   />
 </div>
+<!-- <div class="valid-feedback"> Ok! </div> -->
+<app-error-message
+  [control]="control"
+  [label]="name"
+>  
+</app-error-message>

@@ -1,0 +1,80 @@
+.recipe {
+  margin-bottom: 25px;
+  font-size: 17px;
+  border-bottom: 7px double #217782;
+  padding-bottom: 25px;
+
+  &-info-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 15px 0;
+
+    &-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &-image {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      &-text {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    line-height: 20px;
+
+    &-image {
+      flex: 1;
+      border-radius: 10px;
+      height: 300px;
+      margin-left: 21px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 8px 7px 12px #a2bec1cf;
+    }
+
+    &-steps {
+      flex: 1;
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        &-li {
+          &-ingredients {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            &-item {
+              list-style-type: square;
+              list-style-position: inside;
+              color: #089db0;
+              font-size: 17px;
+
+              &-span {
+                color: #000000;
+              }
+            }
+          }
+
+          &-p {
+            line-height: 25px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<a class="main-card-a" routerLink="">
-  <img [src]="recipe.image" [alt]="'Bolinho de Chuva'" class="main-card-a-image" />
+<a class="main-card-a" [routerLink]="['/category', recipe.categoryId]">
+  <img [src]="recipe.image" class="main-card-a-image" />
   <h3 class="subtitle-main-section">{{ recipe.name }}</h3>
 </a>

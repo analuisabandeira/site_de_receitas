@@ -1,0 +1,26 @@
+@import '/src/styles.scss';
+
+.input-control {
+  display: grid;
+  row-gap: 5px;
+}
+
+.is-invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+.is-valid {
+  border: 1px solid green;
+  outline: none;
+}
+
+.valid-feedback {
+  margin-top: 5px;
+  padding: 10px;
+  background: #94f4a185;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: green;
+  font-size: 15px;
+}

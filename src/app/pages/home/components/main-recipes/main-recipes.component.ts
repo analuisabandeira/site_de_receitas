@@ -9,18 +9,19 @@ import { IRecipe } from 'src/app/models/recipe-interface';
   styleUrls: ['./main-recipes.component.scss']
 })
 export class MainRecipesComponent implements OnInit {
-  
   recipesList: IRecipe[] = [];
+
+  link!: string;
 
   constructor(private categoriesService: CategoriesService) {}
 
   ngOnInit(): void {
-    this.categoriesService.getCategory().subscribe(categories => {
+    this.categoriesService.getDataBase().subscribe(categories => {
       categories.forEach(category => {
         this.recipesList.push(...category.recipes);
       });
 
-      this.recipesList = this.recipesList.filter(recipe => recipe.betestDishes);
+      this.recipesList = this.recipesList.filter(recipe => recipe.bestDishes);
 
       if (this.recipesList.length > 6) {
         this.recipesList.length = 6;

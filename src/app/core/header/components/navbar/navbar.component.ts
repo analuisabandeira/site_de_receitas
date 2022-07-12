@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CategoriesService } from 'src/app/core/services/categories.service';
-import { ICategory } from 'src/app/models/category-interface';
+import { IRoutes } from 'src/app/models/routes';
 
 @Component({
   selector: 'app-navbar',
@@ -9,13 +9,11 @@ import { ICategory } from 'src/app/models/category-interface';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  categoriesList?: ICategory[];
+  routesList?: IRoutes[];
 
   constructor(private categoriesService: CategoriesService) {}
 
   ngOnInit(): void {
-    this.categoriesService.getCategory().subscribe(categories => {
-      this.categoriesList = categories;
-    });
+    this.routesList = this.categoriesService.routes;
   }
 }

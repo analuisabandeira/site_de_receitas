@@ -4,9 +4,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 1px solid #02292e;
@@ -16,27 +13,22 @@
   max-width: 80%;
   padding: 10px;
   box-sizing: border-box;
-  // overflow-y: scroll;
-  // z-index: 10000;
 
   &-header {
     padding: 10px 15px;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-
-    &-title {
-      flex: 1;
-      padding-bottom: 5px;
-    }
+    display: grid;
+    grid-template-columns: 15fr 0.5fr;
+    align-items: center;
+    grid-gap: 20px;
 
     &-button {
       cursor: pointer;
       border: none;
       outline: none;
       background: none;
-      font-size: 1.5rem;
+      font-size: 2.5em;
       transition: 1s;
 
       &:hover {
@@ -47,39 +39,46 @@
 
   &-form {
     padding: 10px 15px;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
 
-    &-check {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    &-container {
+      display: grid;
+      row-gap: 10px;
 
-      &-input-file {
-        background: none;
-        outline: none;
-        margin: 10px 0;
-        padding: 10px 0;
-      }
-    }
-
-    &-add-ingredients {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 10px;
-
-      &-control {
-        flex: 1;
+      &-add {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        width: 100%;
+        margin: 0 auto;
+        grid-gap: 30px;
+        align-items: start;
       }
 
-      &-button {
-        width: 120px;
-        max-width: 200px;
-        margin-left: 15px;
+      &-file {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        column-gap: 5px;
+
+        &-label {
+          padding: 10px;
+          width: 200px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+
+      &-add-ingredients {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: end;
+        column-gap: 10px;
+
+        &-button {
+          width: 120px;
+          max-width: 200px;
+          margin-left: 15px;
+        }
       }
     }
   }
@@ -87,4 +86,18 @@
 
 .active {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.is-invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+.is-valid {
+  border: 1px solid green;
+  outline: none;
+}
+
+.container {
+  padding: 32px;
 }

@@ -2,29 +2,58 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { ICategory } from 'src/app/models/category-interface';
-import { IRecipe } from 'src/app/models/recipe-interface';
-import { map } from 'rxjs';
+import { IRoutes } from 'src/app/models/routes';
+import { firstValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriesService {
-  categories!: ICategory[];
+  filteredCategory!: ICategory;
 
-  // private categories: ICategory[] = [
-  //   {  router: 'datas_festivas', name: 'Datas Festivas' },
-  //   {  router: 'sobremesas', name: 'Bolos e Sobremesas' },
-  //   {  router: 'tortas_salgadas', name: 'Tortas Salgadas' },
-  //   {  router: 'receitas_saudaveis', name: 'Receitas Saudáveis' },
-  //   {  router: 'sopas', name: 'Sopas e Caldos' }
-  // ];
+  routes: IRoutes[] = [
+    { link: 'datas_festivas', title: 'Datas Festivas' },
+    { link: 'sobremesas', title: 'Bolos e Sobremesas' },
+    { link: 'tortas_salgadas', title: 'Tortas Salgadas' },
+    { link: 'receitas_saudaveis', title: 'Receitas Saudáveis' },
+    { link: 'sopas', title: 'Sopas e Caldos' }
+  ];
 
   constructor(private http: HttpClient) {}
 
-  getCategory() {
-    // return this.categories;
+  getDataBase() {
     return this.http.get<ICategory[]>('assets/mock/mock_database.json');
   }
+
+  async getCategory(id: string): Promise<ICategory | undefined>{
+    const categories = await firstValueFrom(this.getDataBase());
+
+    return categories.find(category => category.categoryId == id);
+
+    // this.getDataBase().subscribe(categories => {
+    //   this.filteredCategory = categories.find(category => {
+    //     const teste = category.categoryId == id;
+
+    //     return teste;
+    //   }) as ICategory;
+    // });
+    // return this.filteredCategory;
+  }
+
+  // getCategory(id: string): any {
+  //   this.getDataBase().subscribe(dados => (this.filteredCategory = dados));
+
+  //   for (let i = 0; i < this.filteredCategory.length; i++) {
+  //     let category = this.filteredCategory[i];
+
+  //     if (category.categoryId == id) {
+  //       this.categoria = category;
+  //     }
+  //     return null;
+  //   }
+
+  //   return this.categoria;
+  // }
 
   getFavorites() {
     return [
@@ -32,8 +61,6 @@ export class CategoriesService {
       { valor: 'n', desc: 'Não' }
     ];
   }
-
-  // getRecipes() {}
 }
 function Input() {
   throw new Error('Function not implemented.');

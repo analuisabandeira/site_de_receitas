@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { CategoriesService } from 'src/app/core/services/categories.service';
 import { IRecipe } from 'src/app/models/recipe-interface';
 
 @Component({
@@ -10,7 +11,7 @@ import { IRecipe } from 'src/app/models/recipe-interface';
 export class MainCardsComponent implements OnInit {
   @Input() recipe!: IRecipe;
 
-  constructor() {}
+  constructor(private categoriesService: CategoriesService) {}
 
   ngOnInit(): void {}
 }
